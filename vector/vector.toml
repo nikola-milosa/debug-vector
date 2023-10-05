@@ -3,14 +3,14 @@ type = "demo_logs"
 interval = 1
 format = "json"
 
-[transforms.bn-p-p-host_node_exporter-transform]
+[transforms.bn-p-host-host_node_exporter-transform]
 type = "remap"
 inputs = [ "placeholder" ]
 source = """
 .placeholder = true
 """
 
-[transforms.bn-p-p-node_exporter-transform]
+[transforms.bn-p-guest-node_exporter-transform]
 type = "remap"
 inputs = [ "placeholder" ]
 source = """
@@ -36,7 +36,7 @@ source = """
 # Flag bn logs
 [transforms.bn_node-host]
 type = "remap"
-inputs = [ "*-*-*-host_node_exporter-transform"]
+inputs = [ "*-*-host-host_node_exporter-transform"]
 source = """
 .boundary_node = true
 .job = "host_node_exporter"
@@ -44,7 +44,7 @@ source = """
 
 [transforms.bn_node-guest]
 type = "remap"
-inputs = [ "*-*-*-node_exporter-transform" ]
+inputs = [ "*-*-guest-node_exporter-transform" ]
 source = """
 .boundary_node = true
 .job = "node_exporter"
@@ -94,7 +94,7 @@ inputs = ["filter-bn"]
 source = """
 preserved_fields = {}
 
-for_each(["_HOSTNAME", "__CURSOR", "MESSAGE", "message"]) -> |_, k| {
+for_each(["_HOSTNAME", "__CURSOR"]) -> |_, k| {
   v = get!(., [k])
   if v != null {
     preserved_fields = set!(preserved_fields, [k], v)
@@ -110,6 +110,10 @@ if is_string(parsed_message) {
 }
 
 . = merge!(parsed_message, preserved_fields)
+
+if exists(.service) == false {
+  .service = "ic-boundary"
+}
 """
 
 [transforms.by_service]
