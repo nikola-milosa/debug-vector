@@ -1,0 +1,262 @@
+[sources.placeholder]
+type = "demo_logs"
+interval = 1
+format = "json"
+
+[transforms.bn-p-p-host_node_exporter-transform]
+type = "remap"
+inputs = [ "placeholder" ]
+source = """
+.placeholder = true
+"""
+
+[transforms.bn-p-p-node_exporter-transform]
+type = "remap"
+inputs = [ "placeholder" ]
+source = """
+.placeholder = true
+"""
+
+[transforms.standard_node-p-p-p-p-p-p-p-p-p-p-host_node_exporter-transform]
+type = "remap"
+inputs = [ "placeholder" ]
+source = """
+.placeholder = true
+"""
+
+[transforms.standard_node-p-p-p-p-p-p-p-p-p-p-node_exporter-transform]
+type = "remap"
+inputs = [ "placeholder" ]
+source = """
+.placeholder = true
+"""
+
+#####################################################
+
+# Flag bn logs
+[transforms.bn_node-host]
+type = "remap"
+inputs = [ "*-*-*-host_node_exporter-transform"]
+source = """
+.boundary_node = true
+.job = "host_node_exporter"
+"""
+
+[transforms.bn_node-guest]
+type = "remap"
+inputs = [ "*-*-*-node_exporter-transform" ]
+source = """
+.boundary_node = true
+.job = "node_exporter"
+"""
+
+# Flag standard node logs
+[transforms.standard_node-host]
+type = "remap"
+inputs = [ "*-*-*-*-*-*-*-*-*-*-*-host_node_exporter-transform"]
+source = """
+.standard_node = true
+.job = "host_node_exporter"
+"""
+
+[transforms.standard_node-guest]
+type = "remap"
+inputs = [ "*-*-*-*-*-*-*-*-*-*-*-node_exporter-transform" ]
+source = """
+.standard_node = true
+.job = "node_exporter"
+"""
+
+# Filters the placeholder logs
+[transforms.filter]
+type = "filter"
+inputs = [ "*-host", "*-guest" ]
+condition = { type = "vrl", source = "exists(.placeholder) == false" }
+
+# Filters boundary node logs
+[transforms.filter-bn]
+type = "filter"
+inputs = [ "filter" ]
+condition = { type = "vrl", source = "exists(.boundary_node) == true" }
+
+# Filters standard node logs
+[transforms.filter-standard]
+type = "filter"
+inputs = [ "filter" ]
+condition = { type = "vrl", source = "exists(.standard_node) == true" }
+
+#####################################################
+# Boundary node logs logic
+
+[transforms.boundary_node_parsed]
+type = "remap"
+inputs = ["filter-bn"]
+source = """
+preserved_fields = {}
+
+for_each(["_HOSTNAME", "__CURSOR", "MESSAGE", "message"]) -> |_, k| {
+  v = get!(., [k])
+  if v != null {
+    preserved_fields = set!(preserved_fields, [k], v)
+  }
+}
+
+parsed_message = parse_json(.MESSAGE) ?? .MESSAGE
+
+if is_string(parsed_message) {
+  temp = {}
+  temp.MESSAGE = .MESSAGE
+  parsed_message = temp
+}
+
+. = merge!(parsed_message, preserved_fields)
+"""
+
+[transforms.by_service]
+type = "route"
+inputs = ["boundary_node_parsed"]
+
+  [transforms.by_service.route]
+  certificate_issuer = '.service == "certificate-issuer"'
+  certificate_syncer = '.service == "certificate-syncer"'
+  control_plane = '.service == "control-plane"'
+  ic_boundary = '.service == "ic-boundary"'
+
+# certificate-issuer
+
+# [sinks.certificate_issuer_elasticsearch]
+# type = "elasticsearch"
+# inputs = ["by_service.certificate_issuer"]
+# endpoints = ["http://es-es-default.ic-logs-elastic.svc.cluster.local:9200"]
+# mode = "bulk"
+# compression = "gzip"
+# id_key = "__CURSOR"
+
+#   [sinks.certificate_issuer_elasticsearch.bulk]
+#   index = "boundary-node-certificate-issuer-%Y-%m-%d"
+
+[sinks.certificate_issuer_elasticsearch-file]
+type = "file"
+inputs = [ "by_service.certificate_issuer" ]
+path = "/data/certificate_issuer-%Y-%m-%d.json"
+  [sinks.certificate_issuer_elasticsearch-file.encoding]
+  codec = "json"
+
+# certificate-syncer
+
+# [sinks.certificate_syncer_elasticsearch]
+# type = "elasticsearch"
+# inputs = ["by_service.*"]
+# endpoints = ["http://es-es-default.ic-logs-elastic.svc.cluster.local:9200"]
+# mode = "bulk"
+# compression = "gzip"
+# id_key = "__CURSOR"
+
+#   [sinks.certificate_syncer_elasticsearch.bulk]
+#   index = "boundary-node-certificate-syncer-%Y-%m-%d"
+
+[sinks.certificate_syncer_elasticsearch-file]
+type = "file"
+inputs = [ "by_service.certificate_syncer" ]
+path = "/data/certificate_syncer-%Y-%m-%d.json"
+  [sinks.certificate_syncer_elasticsearch-file.encoding]
+  codec = "json"
+
+# control-plane
+
+# [sinks.control_plane_elasticsearch]
+# type = "elasticsearch"
+# inputs = ["by_service.control_plane"]
+# endpoints = ["http://es-es-default.ic-logs-elastic.svc.cluster.local:9200"]
+# mode = "bulk"
+# compression = "gzip"
+# id_key = "__CURSOR"
+
+#   [sinks.control_plane_elasticsearch.bulk]
+#   index = "boundary-node-control-plane-%Y-%m-%d"
+
+[sinks.certificate_contol_plane_elasticsearch-file]
+type = "file"
+inputs = [ "by_service.control_plane" ]
+path = "/data/control_plane-%Y-%m-%d.json"
+  [sinks.certificate_contol_plane_elasticsearch-file.encoding]
+  codec = "json"
+
+# ic-boundary
+
+# [sinks.ic_boundary_elasticsearch]
+# type = "elasticsearch"
+# inputs = ["by_service.ic_boundary"]
+# endpoints = ["http://es-es-default.ic-logs-elastic.svc.cluster.local:9200"]
+# mode = "bulk"
+# compression = "gzip"
+# id_key = "__CURSOR"
+
+#   [sinks.ic_boundary_elasticsearch.bulk]
+#   index = "boundary-node-ic-boundary-%Y-%m-%d"
+
+[sinks.ic_boundary-file]
+type = "file"
+inputs = [ "by_service.ic_boundary" ]
+path = "/data/ic_boundary-%Y-%m-%d.json"
+  [sinks.ic_boundary-file.encoding]
+  codec = "json"
+
+#####################################################
+# Standard node logs logic
+
+[transforms.to_json]
+type = "remap"
+inputs = [ "filter-standard" ]
+source = """
+temp_old = .
+parsed_message = parse_json(.MESSAGE) ?? .MESSAGE
+. = {}
+.ic_subnet = temp_old.ic_subnet
+.dc = temp_old.dc
+.ic_node = temp_old.ic_node
+.ic = temp_old.ic
+.job = temp_old.job
+.SYSLOG_IDENTIFIER = temp_old.SYSLOG_IDENTIFIER
+.__CURSOR = temp_old.__CURSOR
+._HOSTNAME = temp_old._HOSTNAME
+._SYSTEMD_CGROUP = temp_old._SYSTEMD_CGROUP
+._SYSTEMD_UNIT = temp_old._SYSTEMD_UNIT
+._CMDLINE = temp_old._CMDLINE
+.ip_address = temp_old.address
+.node_provider_id = temp_old.node_provider_id
+.ic = temp_old.ic
+if is_string(parsed_message){
+    .message = parsed_message
+    .LEVEL = "INFO"
+} else {
+    .message = parsed_message.log_entry.message
+    .LEVEL = parsed_message.log_entry.level
+    .CRATE_ = parsed_message.log_entry.crate_
+    .MODULE = parsed_message.log_entry.module
+}
+.host = temp_old.host  
+.timestamp = to_timestamp!(to_int!(temp_old.__REALTIME_TIMESTAMP) * 1000, "nanoseconds")
+"""
+
+# [sinks.out_elastic]
+# type = "elasticsearch"
+# inputs = ["to_json"]
+# compression = "gzip"
+# endpoints = [
+#     "http://es-es-default.ic-logs-elastic.svc.cluster.local:9200",
+# ]
+# api_version = "v8"
+# id_key = "__CURSOR"
+# mode = "bulk"
+#     [sinks.out_elastic.bulk]
+#     index = "ic-logs-%Y-%m-%d"
+#     [sinks.out_elastic.request]
+#     timeout_secs = 180
+
+[sinks.ic-file]
+type = "file"
+inputs = [ "to_json" ]
+path = "/data/ic-logs-%Y-%m-%d.json"
+  [sinks.ic-file.encoding]
+  codec = "json"

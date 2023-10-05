@@ -1,0 +1,412 @@
+{
+  "sources": {
+    "sv15-bnp00-guest-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2604:1380:45e1:a603:5000:cfff:feaf:ee86",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19532
+    },
+    "scjri-zcrz3-27aoo-a2ggm-alu4o-fcu4t-r5jy4-7hdeh-prukj-4cols-qae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a00:fc0:5000:300:6801:beff:fea6:fcb7",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sffnd-j2il7-3y4ab-aznmv-gzqdt-k6ka6-n4upt-ymjkt-r4key-rjahu-dqe-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a0f:cd00:2:1:6801:8ff:fe1d:6f25",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sg1-bnp00-guest-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2604:1380:40e1:4701:5000:59ff:fe4d:3ea2",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19532
+    },
+    "sv15-bnp01-guest-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2604:1380:45e1:a604:5000:65ff:fec9:e862",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19532
+    },
+    "se1-bnp00-guest-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2600:c00:2:100:5000:d0ff:fe62:c29b",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19532
+    },
+    "skzfd-vbz7c-5cbqo-6ejuw-nf6ks-c7doo-njtlq-gbcmw-smuwf-xes7h-4ae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a04:9dc0:0:108:6801:d6ff:fe59:eae1",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "stujq-f2c5m-vkdpk-hb4hy-u3w3w-jjyht-o3hsk-sh5z3-36n5q-5ocis-qae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2600:3004:1200:1200:6801:6cff:fed9:ffe",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sbae7-ta24c-4nofs-6bn35-iqzta-tmvbk-wtdef-f44ky-2j3bl-grgog-tae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2610:190:6000:1:6801:55ff:fe00:18fb",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sspbf-fne25-z7m5y-imq3z-ihf3v-qbyhd-ohrqp-zzfk3-dbuu3-zs7se-pqe-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a0a:5000:0:3:6801:e2ff:fe62:a969",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "s2p3k-c7zfo-3ogmz-esx75-id6pg-6xv72-kifmd-gp46u-ay6vt-d7i5d-5ae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a0a:5000:0:3:6801:efff:fe29:ee2b",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "skrp7-gim75-d5mmc-j4rce-5zruj-b26u2-uqfav-o4gnp-nk5pk-aa3jp-aae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2401:3f00:1000:23:6801:f8ff:fe1a:b0f4",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "s2ifh-yyi2f-3bht5-jtpb2-q5bim-tuwfv-yqio6-zrgbd-w7yck-peeeq-yae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2607:f758:1220:0:6801:4dff:fef9:220d",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sbx3g-qhihi-l2t5h-qzg7f-n5yzm-vsd5p-ybfbq-3mygi-456km-5sbtx-sqe-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2602:ffe4:801:16:6801:2dff:fef7:4302",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sg1-bnp01-guest-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2604:1380:40e1:4702:5000:48ff:fedf:c136",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19532
+    },
+    "sfuvc-ddail-b7u54-5sthn-rk6vg-yvuf7-qjcv7-fxmgz-uqhtw-cuc3a-6ae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a01:2a8:a13e:1:6801:c2ff:fe1a:bd75",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "scrp5-iiht5-iwgac-u36ff-jou7l-b7udy-mbim6-5nlte-5ki2w-6wyky-qae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2610:190:df01:5:6801:8eff:feae:158a",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "st4fx-z43wu-xzc3a-vnajq-ts2u6-v5ws5-q36gu-5amxb-665e4-bsq2a-gqe-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2607:f758:c300:0:6801:abff:fecc:c642",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "s52il-lowsg-eip4y-pt5lv-sbdpb-vg4gg-4iasu-egajp-yluji-znfz3-2qe-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a02:41b:300e:0:6801:6ff:fe0b:a0a6",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "saw4q-px4st-tqivd-luwao-njxl5-hjiuy-7j365-mvphm-a5g5x-zkooy-kae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2602:ffe4:801:18:6801:13ff:fe06:e43b",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sdheo-vosia-yxuoa-rrtrk-txodz-iknw3-vh7mh-e5blz-3g3yh-wvv6v-gqe-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2001:438:fffd:4a:6801:8eff:fed1:f1f5",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "snaam-n24at-yjwgu-o62mf-y2cry-lsxfm-nilrt-mgyat-kshvj-rlhlm-fae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2401:7500:1016:0:6801:bcff:fe0f:68bb",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sdytw-krjjp-mac6s-wnde7-sulf2-zxzdx-dpoan-4r5fn-qdgol-7buz3-mae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a02:41b:300e:0:6801:26ff:fe06:d06b",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sua4d-2yomd-7lnkd-6kumk-tzsqm-mv5dm-prpte-zjtqr-x3d63-bapf4-6ae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2607:ff70:3:2:6801:99ff:feb4:50ed",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "si6b5-vl4vg-tzvkr-is64k-d7kns-egjpt-qanwn-b2j2r-jspxd-4nkh5-zae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2602:ffe4:801:17:6801:74ff:fe31:874f",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "spr2z-4kaf5-2dxlg-hatfo-obp75-b6vwh-ts2z5-eurny-rbun2-z6m4h-kae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2001:4d78:400:10a:6801:58ff:fe9d:fff8",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "spjcy-g5o34-rdpg5-szn2t-yvxkl-42ohl-s477h-vgurz-xxkln-vdeuv-oae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2607:f758:1220:0:6801:24ff:fed2:2405",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "sbiuh-cg2ut-pmrik-jit6d-t5szz-4fp7i-pqodm-llgxp-ooht3-d3txm-bqe-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2a02:800:2:2003:6801:d2ff:fe40:17a8",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    },
+    "swzzz-nct4o-kgh2s-fezeh-luamk-chexm-jsk4r-ks2qa-au63y-jtc7r-pae-node_exporter-source": {
+      "type": "systemd_journal_gatewayd",
+      "endpoint": "2001:920:401a:1710:6801:b7ff:fecd:be01",
+      "data_dir": "logs",
+      "batch_size": 32,
+      "port": 19531
+    }
+  },
+  "transforms": {
+    "scrp5-iiht5-iwgac-u36ff-jou7l-b7udy-mbim6-5nlte-5ki2w-6wyky-qae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "scrp5-iiht5-iwgac-u36ff-jou7l-b7udy-mbim6-5nlte-5ki2w-6wyky-qae-node_exporter-source"
+      ],
+      "source": ".dc = \"st1\"\n.ic = \"ic\"\n.ic_node = \"scrp5-iiht5-iwgac-u36ff-jou7l-b7udy-mbim6-5nlte-5ki2w-6wyky-qae\"\n.address = \"2610:190:df01:5:6801:8eff:feae:158a\"\n.node_provider_id = \"izmhk-lpjum-uo4oy-lviba-yctpc-arg4b-2ywim-vgoiu-gqaj2-gskmw-2qe\""
+    },
+    "sspbf-fne25-z7m5y-imq3z-ihf3v-qbyhd-ohrqp-zzfk3-dbuu3-zs7se-pqe-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sspbf-fne25-z7m5y-imq3z-ihf3v-qbyhd-ohrqp-zzfk3-dbuu3-zs7se-pqe-node_exporter-source"
+      ],
+      "source": ".ic_node = \"sspbf-fne25-z7m5y-imq3z-ihf3v-qbyhd-ohrqp-zzfk3-dbuu3-zs7se-pqe\"\n.dc = \"tb1\"\n.node_provider_id = \"lksfo-j2smg-76m4c-jwasz-e5exl-gptsk-jvtc7-zvm34-ezk4g-p2xjt-dqe\"\n.ic = \"ic\"\n.address = \"2a0a:5000:0:3:6801:e2ff:fe62:a969\""
+    },
+    "spr2z-4kaf5-2dxlg-hatfo-obp75-b6vwh-ts2z5-eurny-rbun2-z6m4h-kae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "spr2z-4kaf5-2dxlg-hatfo-obp75-b6vwh-ts2z5-eurny-rbun2-z6m4h-kae-node_exporter-source"
+      ],
+      "source": ".dc = \"fr2\"\n.address = \"2001:4d78:400:10a:6801:58ff:fe9d:fff8\"\n.ic_node = \"spr2z-4kaf5-2dxlg-hatfo-obp75-b6vwh-ts2z5-eurny-rbun2-z6m4h-kae\"\n.ic = \"ic\"\n.node_provider_id = \"wdnqm-clqti-im5yf-iapio-avjom-kyppl-xuiza-oaz6z-smmts-52wyg-5ae\""
+    },
+    "sg1-bnp00-guest-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sg1-bnp00-guest-node_exporter-source"
+      ],
+      "source": ".node_provider_id = \"2vxsx-fae\"\n.ic = \"ic\"\n.address = \"[2604:1380:40e1:4701:5000:59ff:fe4d:3ea2]:9100\"\n.dc = \"sg1\"\n.ic_node = \"sg1-bnp00\""
+    },
+    "stujq-f2c5m-vkdpk-hb4hy-u3w3w-jjyht-o3hsk-sh5z3-36n5q-5ocis-qae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "stujq-f2c5m-vkdpk-hb4hy-u3w3w-jjyht-o3hsk-sh5z3-36n5q-5ocis-qae-node_exporter-source"
+      ],
+      "source": ".ic = \"ic\"\n.ic_node = \"stujq-f2c5m-vkdpk-hb4hy-u3w3w-jjyht-o3hsk-sh5z3-36n5q-5ocis-qae\"\n.node_provider_id = \"eipr5-izbom-neyqh-s3ec2-52eww-cyfpg-qfomg-3dpwj-4pffh-34xcu-7qe\"\n.address = \"2600:3004:1200:1200:6801:6cff:fed9:ffe\"\n.dc = \"pl1\""
+    },
+    "sfuvc-ddail-b7u54-5sthn-rk6vg-yvuf7-qjcv7-fxmgz-uqhtw-cuc3a-6ae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sfuvc-ddail-b7u54-5sthn-rk6vg-yvuf7-qjcv7-fxmgz-uqhtw-cuc3a-6ae-node_exporter-source"
+      ],
+      "source": ".node_provider_id = \"6r5lw-l7db7-uwixn-iw5en-yy55y-ilbtq-e6gcv-g22r2-j3g6q-y37jk-jqe\"\n.address = \"2a01:2a8:a13e:1:6801:c2ff:fe1a:bd75\"\n.dc = \"zh7\"\n.ic_node = \"sfuvc-ddail-b7u54-5sthn-rk6vg-yvuf7-qjcv7-fxmgz-uqhtw-cuc3a-6ae\"\n.ic = \"ic\""
+    },
+    "sv15-bnp01-guest-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sv15-bnp01-guest-node_exporter-source"
+      ],
+      "source": ".node_provider_id = \"2vxsx-fae\"\n.dc = \"sv15\"\n.ic = \"ic\"\n.ic_node = \"sv15-bnp01\"\n.address = \"[2604:1380:45e1:a604:5000:65ff:fec9:e862]:9100\""
+    },
+    "s2p3k-c7zfo-3ogmz-esx75-id6pg-6xv72-kifmd-gp46u-ay6vt-d7i5d-5ae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "s2p3k-c7zfo-3ogmz-esx75-id6pg-6xv72-kifmd-gp46u-ay6vt-d7i5d-5ae-node_exporter-source"
+      ],
+      "source": ".address = \"2a0a:5000:0:3:6801:efff:fe29:ee2b\"\n.node_provider_id = \"lksfo-j2smg-76m4c-jwasz-e5exl-gptsk-jvtc7-zvm34-ezk4g-p2xjt-dqe\"\n.ic_node = \"s2p3k-c7zfo-3ogmz-esx75-id6pg-6xv72-kifmd-gp46u-ay6vt-d7i5d-5ae\"\n.ic = \"ic\"\n.dc = \"tb1\"\n.ic_subnet = \"tdb26-jop6k-aogll-7ltgs-eruif-6kk7m-qpktf-gdiqx-mxtrf-vb5e6-eqe\""
+    },
+    "sua4d-2yomd-7lnkd-6kumk-tzsqm-mv5dm-prpte-zjtqr-x3d63-bapf4-6ae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sua4d-2yomd-7lnkd-6kumk-tzsqm-mv5dm-prpte-zjtqr-x3d63-bapf4-6ae-node_exporter-source"
+      ],
+      "source": ".ic = \"ic\"\n.ic_node = \"sua4d-2yomd-7lnkd-6kumk-tzsqm-mv5dm-prpte-zjtqr-x3d63-bapf4-6ae\"\n.ic_subnet = \"pzp6e-ekpqk-3c5x7-2h6so-njoeq-mt45d-h3h6c-q3mxf-vpeq5-fk5o7-yae\"\n.node_provider_id = \"izmhk-lpjum-uo4oy-lviba-yctpc-arg4b-2ywim-vgoiu-gqaj2-gskmw-2qe\"\n.address = \"2607:ff70:3:2:6801:99ff:feb4:50ed\"\n.dc = \"ch3\""
+    },
+    "sbiuh-cg2ut-pmrik-jit6d-t5szz-4fp7i-pqodm-llgxp-ooht3-d3txm-bqe-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sbiuh-cg2ut-pmrik-jit6d-t5szz-4fp7i-pqodm-llgxp-ooht3-d3txm-bqe-node_exporter-source"
+      ],
+      "source": ".dc = \"lj1\"\n.address = \"2a02:800:2:2003:6801:d2ff:fe40:17a8\"\n.ic_node = \"sbiuh-cg2ut-pmrik-jit6d-t5szz-4fp7i-pqodm-llgxp-ooht3-d3txm-bqe\"\n.ic_subnet = \"3hhby-wmtmw-umt4t-7ieyg-bbiig-xiylg-sblrt-voxgt-bqckd-a75bf-rqe\"\n.node_provider_id = \"wdjjk-blh44-lxm74-ojj43-rvgf4-j5rie-nm6xs-xvnuv-j3ptn-25t4v-6ae\"\n.ic = \"ic\""
+    },
+    "s2ifh-yyi2f-3bht5-jtpb2-q5bim-tuwfv-yqio6-zrgbd-w7yck-peeeq-yae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "s2ifh-yyi2f-3bht5-jtpb2-q5bim-tuwfv-yqio6-zrgbd-w7yck-peeeq-yae-node_exporter-source"
+      ],
+      "source": ".address = \"2607:f758:1220:0:6801:4dff:fef9:220d\"\n.ic = \"ic\"\n.node_provider_id = \"dzxyh-fo4sw-pxckk-kwqvc-xjten-3yqon-fm62b-2hz4s-raa4g-jzczg-iqe\"\n.dc = \"at1\"\n.ic_node = \"s2ifh-yyi2f-3bht5-jtpb2-q5bim-tuwfv-yqio6-zrgbd-w7yck-peeeq-yae\""
+    },
+    "sbae7-ta24c-4nofs-6bn35-iqzta-tmvbk-wtdef-f44ky-2j3bl-grgog-tae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sbae7-ta24c-4nofs-6bn35-iqzta-tmvbk-wtdef-f44ky-2j3bl-grgog-tae-node_exporter-source"
+      ],
+      "source": ".ic = \"ic\"\n.dc = \"ph1\"\n.ic_node = \"sbae7-ta24c-4nofs-6bn35-iqzta-tmvbk-wtdef-f44ky-2j3bl-grgog-tae\"\n.address = \"2610:190:6000:1:6801:55ff:fe00:18fb\"\n.node_provider_id = \"izmhk-lpjum-uo4oy-lviba-yctpc-arg4b-2ywim-vgoiu-gqaj2-gskmw-2qe\""
+    },
+    "sg1-bnp01-guest-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sg1-bnp01-guest-node_exporter-source"
+      ],
+      "source": ".node_provider_id = \"2vxsx-fae\"\n.ic = \"ic\"\n.address = \"[2604:1380:40e1:4702:5000:48ff:fedf:c136]:9100\"\n.ic_node = \"sg1-bnp01\"\n.dc = \"sg1\""
+    },
+    "saw4q-px4st-tqivd-luwao-njxl5-hjiuy-7j365-mvphm-a5g5x-zkooy-kae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "saw4q-px4st-tqivd-luwao-njxl5-hjiuy-7j365-mvphm-a5g5x-zkooy-kae-node_exporter-source"
+      ],
+      "source": ".ic_subnet = \"gmq5v-hbozq-uui6y-o55wc-ihop3-562wb-3qspg-nnijg-npqp5-he3cj-3ae\"\n.ic_node = \"saw4q-px4st-tqivd-luwao-njxl5-hjiuy-7j365-mvphm-a5g5x-zkooy-kae\"\n.address = \"2602:ffe4:801:18:6801:13ff:fe06:e43b\"\n.ic = \"ic\"\n.node_provider_id = \"sixix-2nyqd-t2k2v-vlsyz-dssko-ls4hl-hyij4-y7mdp-ja6cj-nsmpf-yae\"\n.dc = \"ty3\""
+    },
+    "sdytw-krjjp-mac6s-wnde7-sulf2-zxzdx-dpoan-4r5fn-qdgol-7buz3-mae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sdytw-krjjp-mac6s-wnde7-sulf2-zxzdx-dpoan-4r5fn-qdgol-7buz3-mae-node_exporter-source"
+      ],
+      "source": ".ic = \"ic\"\n.node_provider_id = \"ucjqj-jmbj3-rs4aq-ekzpw-ltjs3-zrcma-t6r3t-m5wxc-j5yrj-unwoj-mae\"\n.address = \"2a02:41b:300e:0:6801:26ff:fe06:d06b\"\n.ic_subnet = \"lspz2-jx4pu-k3e7p-znm7j-q4yum-ork6e-6w4q6-pijwq-znehu-4jabe-kqe\"\n.dc = \"zh4\"\n.ic_node = \"sdytw-krjjp-mac6s-wnde7-sulf2-zxzdx-dpoan-4r5fn-qdgol-7buz3-mae\""
+    },
+    "skrp7-gim75-d5mmc-j4rce-5zruj-b26u2-uqfav-o4gnp-nk5pk-aa3jp-aae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "skrp7-gim75-d5mmc-j4rce-5zruj-b26u2-uqfav-o4gnp-nk5pk-aa3jp-aae-node_exporter-source"
+      ],
+      "source": ".ic = \"ic\"\n.dc = \"sg3\"\n.node_provider_id = \"6nbcy-kprg6-ax3db-kh3cz-7jllk-oceyh-jznhs-riguq-fvk6z-6tsds-rqe\"\n.address = \"2401:3f00:1000:23:6801:f8ff:fe1a:b0f4\"\n.ic_node = \"skrp7-gim75-d5mmc-j4rce-5zruj-b26u2-uqfav-o4gnp-nk5pk-aa3jp-aae\""
+    },
+    "swzzz-nct4o-kgh2s-fezeh-luamk-chexm-jsk4r-ks2qa-au63y-jtc7r-pae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "swzzz-nct4o-kgh2s-fezeh-luamk-chexm-jsk4r-ks2qa-au63y-jtc7r-pae-node_exporter-source"
+      ],
+      "source": ".ic_node = \"swzzz-nct4o-kgh2s-fezeh-luamk-chexm-jsk4r-ks2qa-au63y-jtc7r-pae\"\n.node_provider_id = \"rbn2y-6vfsb-gv35j-4cyvy-pzbdu-e5aum-jzjg6-5b4n5-vuguf-ycubq-zae\"\n.ic_subnet = \"tdb26-jop6k-aogll-7ltgs-eruif-6kk7m-qpktf-gdiqx-mxtrf-vb5e6-eqe\"\n.dc = \"br1\"\n.ic = \"ic\"\n.address = \"2001:920:401a:1710:6801:b7ff:fecd:be01\""
+    },
+    "sffnd-j2il7-3y4ab-aznmv-gzqdt-k6ka6-n4upt-ymjkt-r4key-rjahu-dqe-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sffnd-j2il7-3y4ab-aznmv-gzqdt-k6ka6-n4upt-ymjkt-r4key-rjahu-dqe-node_exporter-source"
+      ],
+      "source": ".address = \"2a0f:cd00:2:1:6801:8ff:fe1d:6f25\"\n.ic_node = \"sffnd-j2il7-3y4ab-aznmv-gzqdt-k6ka6-n4upt-ymjkt-r4key-rjahu-dqe\"\n.node_provider_id = \"7ryes-jnj73-bsyu4-lo6h7-lbxk5-x4ien-lylws-5qwzl-hxd5f-xjh3w-mqe\"\n.dc = \"ge1\"\n.ic = \"ic\"\n.ic_subnet = \"lhg73-sax6z-2zank-6oer2-575lz-zgbxx-ptudx-5korm-fy7we-kh4hl-pqe\""
+    },
+    "s52il-lowsg-eip4y-pt5lv-sbdpb-vg4gg-4iasu-egajp-yluji-znfz3-2qe-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "s52il-lowsg-eip4y-pt5lv-sbdpb-vg4gg-4iasu-egajp-yluji-znfz3-2qe-node_exporter-source"
+      ],
+      "source": ".dc = \"zh4\"\n.ic_subnet = \"yinp6-35cfo-wgcd2-oc4ty-2kqpf-t4dul-rfk33-fsq3r-mfmua-m2ngh-jqe\"\n.address = \"2a02:41b:300e:0:6801:6ff:fe0b:a0a6\"\n.node_provider_id = \"ucjqj-jmbj3-rs4aq-ekzpw-ltjs3-zrcma-t6r3t-m5wxc-j5yrj-unwoj-mae\"\n.ic = \"ic\"\n.ic_node = \"s52il-lowsg-eip4y-pt5lv-sbdpb-vg4gg-4iasu-egajp-yluji-znfz3-2qe\""
+    },
+    "spjcy-g5o34-rdpg5-szn2t-yvxkl-42ohl-s477h-vgurz-xxkln-vdeuv-oae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "spjcy-g5o34-rdpg5-szn2t-yvxkl-42ohl-s477h-vgurz-xxkln-vdeuv-oae-node_exporter-source"
+      ],
+      "source": ".address = \"2607:f758:1220:0:6801:24ff:fed2:2405\"\n.node_provider_id = \"sma3p-ivkif-hz7nu-ngmvq-ibnjg-nubke-zf6gh-wbnfc-2dlng-l3die-zqe\"\n.ic = \"ic\"\n.dc = \"at1\"\n.ic_node = \"spjcy-g5o34-rdpg5-szn2t-yvxkl-42ohl-s477h-vgurz-xxkln-vdeuv-oae\""
+    },
+    "sbx3g-qhihi-l2t5h-qzg7f-n5yzm-vsd5p-ybfbq-3mygi-456km-5sbtx-sqe-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sbx3g-qhihi-l2t5h-qzg7f-n5yzm-vsd5p-ybfbq-3mygi-456km-5sbtx-sqe-node_exporter-source"
+      ],
+      "source": ".node_provider_id = \"sixix-2nyqd-t2k2v-vlsyz-dssko-ls4hl-hyij4-y7mdp-ja6cj-nsmpf-yae\"\n.ic_node = \"sbx3g-qhihi-l2t5h-qzg7f-n5yzm-vsd5p-ybfbq-3mygi-456km-5sbtx-sqe\"\n.ic = \"ic\"\n.address = \"2602:ffe4:801:16:6801:2dff:fef7:4302\"\n.dc = \"ty1\"\n.ic_subnet = \"qdvhd-os4o2-zzrdw-xrcv4-gljou-eztdp-bj326-e6jgr-tkhuc-ql6v2-yqe\""
+    },
+    "st4fx-z43wu-xzc3a-vnajq-ts2u6-v5ws5-q36gu-5amxb-665e4-bsq2a-gqe-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "st4fx-z43wu-xzc3a-vnajq-ts2u6-v5ws5-q36gu-5amxb-665e4-bsq2a-gqe-node_exporter-source"
+      ],
+      "source": ".ic_subnet = \"fuqsr-in2lc-zbcjj-ydmcw-pzq7h-4xm2z-pto4i-dcyee-5z4rz-x63ji-nae\"\n.address = \"2607:f758:c300:0:6801:abff:fecc:c642\"\n.node_provider_id = \"egb3e-rzi2e-vpsmm-akysp-l2owk-4dgst-b5hmg-xrkwa-cr3uk-zlzds-mae\"\n.dc = \"tp1\"\n.ic_node = \"st4fx-z43wu-xzc3a-vnajq-ts2u6-v5ws5-q36gu-5amxb-665e4-bsq2a-gqe\"\n.ic = \"ic\""
+    },
+    "se1-bnp00-guest-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "se1-bnp00-guest-node_exporter-source"
+      ],
+      "source": ".dc = \"se1\"\n.address = \"[2600:c00:2:100:5000:d0ff:fe62:c29b]:9100\"\n.node_provider_id = \"2vxsx-fae\"\n.ic = \"ic\"\n.ic_node = \"se1-bnp00\""
+    },
+    "sv15-bnp00-guest-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sv15-bnp00-guest-node_exporter-source"
+      ],
+      "source": ".ic_node = \"sv15-bnp00\"\n.address = \"[2604:1380:45e1:a603:5000:cfff:feaf:ee86]:9100\"\n.dc = \"sv15\"\n.node_provider_id = \"2vxsx-fae\"\n.ic = \"ic\""
+    },
+    "skzfd-vbz7c-5cbqo-6ejuw-nf6ks-c7doo-njtlq-gbcmw-smuwf-xes7h-4ae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "skzfd-vbz7c-5cbqo-6ejuw-nf6ks-c7doo-njtlq-gbcmw-smuwf-xes7h-4ae-node_exporter-source"
+      ],
+      "source": ".ic = \"ic\"\n.address = \"2a04:9dc0:0:108:6801:d6ff:fe59:eae1\"\n.node_provider_id = \"i7dto-bgkj2-xo5dx-cyrb7-zkk5y-q46eh-gz6iq-qkgyc-w4qte-scgtb-6ae\"\n.dc = \"bu1\"\n.ic_subnet = \"lhg73-sax6z-2zank-6oer2-575lz-zgbxx-ptudx-5korm-fy7we-kh4hl-pqe\"\n.ic_node = \"skzfd-vbz7c-5cbqo-6ejuw-nf6ks-c7doo-njtlq-gbcmw-smuwf-xes7h-4ae\""
+    },
+    "scjri-zcrz3-27aoo-a2ggm-alu4o-fcu4t-r5jy4-7hdeh-prukj-4cols-qae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "scjri-zcrz3-27aoo-a2ggm-alu4o-fcu4t-r5jy4-7hdeh-prukj-4cols-qae-node_exporter-source"
+      ],
+      "source": ".ic_subnet = \"4ecnw-byqwz-dtgss-ua2mh-pfvs7-c3lct-gtf4e-hnu75-j7eek-iifqm-sqe\"\n.ic_node = \"scjri-zcrz3-27aoo-a2ggm-alu4o-fcu4t-r5jy4-7hdeh-prukj-4cols-qae\"\n.ic = \"ic\"\n.address = \"2a00:fc0:5000:300:6801:beff:fea6:fcb7\"\n.node_provider_id = \"wdjjk-blh44-lxm74-ojj43-rvgf4-j5rie-nm6xs-xvnuv-j3ptn-25t4v-6ae\"\n.dc = \"mb1\""
+    },
+    "si6b5-vl4vg-tzvkr-is64k-d7kns-egjpt-qanwn-b2j2r-jspxd-4nkh5-zae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "si6b5-vl4vg-tzvkr-is64k-d7kns-egjpt-qanwn-b2j2r-jspxd-4nkh5-zae-node_exporter-source"
+      ],
+      "source": ".ic = \"ic\"\n.node_provider_id = \"sixix-2nyqd-t2k2v-vlsyz-dssko-ls4hl-hyij4-y7mdp-ja6cj-nsmpf-yae\"\n.dc = \"ty2\"\n.ic_node = \"si6b5-vl4vg-tzvkr-is64k-d7kns-egjpt-qanwn-b2j2r-jspxd-4nkh5-zae\"\n.address = \"2602:ffe4:801:17:6801:74ff:fe31:874f\""
+    },
+    "sdheo-vosia-yxuoa-rrtrk-txodz-iknw3-vh7mh-e5blz-3g3yh-wvv6v-gqe-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "sdheo-vosia-yxuoa-rrtrk-txodz-iknw3-vh7mh-e5blz-3g3yh-wvv6v-gqe-node_exporter-source"
+      ],
+      "source": ".ic = \"ic\"\n.ic_subnet = \"o3ow2-2ipam-6fcjo-3j5vt-fzbge-2g7my-5fz2m-p4o2t-dwlc4-gt2q7-5ae\"\n.node_provider_id = \"ks7ow-zvs7i-ratdk-azq34-zio2b-gbekj-qjicg-pfhp3-ovhgu-k5qql-dae\"\n.address = \"2001:438:fffd:4a:6801:8eff:fed1:f1f5\"\n.ic_node = \"sdheo-vosia-yxuoa-rrtrk-txodz-iknw3-vh7mh-e5blz-3g3yh-wvv6v-gqe\"\n.dc = \"sj2\""
+    },
+    "snaam-n24at-yjwgu-o62mf-y2cry-lsxfm-nilrt-mgyat-kshvj-rlhlm-fae-node_exporter-transform": {
+      "type": "remap",
+      "inputs": [
+        "snaam-n24at-yjwgu-o62mf-y2cry-lsxfm-nilrt-mgyat-kshvj-rlhlm-fae-node_exporter-source"
+      ],
+      "source": ".dc = \"nm1\"\n.address = \"2401:7500:1016:0:6801:bcff:fe0f:68bb\"\n.ic_node = \"snaam-n24at-yjwgu-o62mf-y2cry-lsxfm-nilrt-mgyat-kshvj-rlhlm-fae\"\n.ic = \"ic\"\n.node_provider_id = \"ulyfm-vkxtj-o42dg-e4nam-l4tzf-37wci-ggntw-4ma7y-d267g-ywxi6-iae\""
+    }
+  }
+}
